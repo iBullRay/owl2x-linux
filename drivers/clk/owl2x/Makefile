@@ -1,5 +1,5 @@
 #
-# Rockchip Clock specific Makefile
+# Actions OWL2X Clock specific Makefile
 #
 
-obj-y	+= clk-rockchip.o
+obj-y	+= clk-owl2x.o
