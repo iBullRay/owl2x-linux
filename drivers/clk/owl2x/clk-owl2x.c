@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2013 MundoReader S.L.
- * Author: Heiko Stuebner <heiko@sntech.de>
+ * Copyright (C) 2014
+ * Author: Actions-Semi, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,12 +20,12 @@
 
 static DEFINE_SPINLOCK(clk_lock);
 
-/*
+/**
  * Gate clocks
- */
+*/
 
-static void __init rk2928_gate_clk_init(struct device_node *node,
-                                         void *data)
+static void __init owl2x_gate_clk_init(struct device_node *node,
+                     void *data)
 {
         struct clk_onecell_data *clk_data;
         const char *clk_parent;
